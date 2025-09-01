@@ -1,0 +1,270 @@
+/* CSS Reset */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('fonts/GreatVibes-Regular.woff2') format('woff2'),
+        url('fonts/GreatVibes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* CSS Styles */
+
+* {
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    background-color: rgb(255, 245, 230);
+}
+
+/* Side */
+
+.side {
+    width: max(600px, 60%);
+    background-image: url('images/andrew-sterling-Re3vvoHF98U-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: white;
+}
+
+h1 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 3.5rem;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 450px;
+    padding: 16px 0;
+}
+
+.logo img {
+    width: 75px;
+    vertical-align: text-bottom;
+    position: relative;
+    top: 16px;
+}
+
+.credits {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.75rem;
+}
+
+.credits a {
+    text-decoration: underline;
+    color: white;
+}
+
+.credits a:hover {
+    text-decoration: none;
+}
+
+/* Form */
+/* Heading */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.headings {
+    margin-top: 120px;
+    margin-bottom: 64px;
+    padding: 0px 48px;
+}
+
+.headings h2.bottom-text {
+    margin-top: 28px;
+}
+
+.form-container {
+    background: white;
+}
+
+/* Form container */
+
+.form-container {
+    padding: 18px 48px;
+    -webkit-box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h2 {
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 180px;
+    margin-bottom: 16px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: min(240px, 100%);
+}
+
+.form-control>input {
+    appearance: none;
+    border: 1px solid #bdbec0;
+    border-radius: 4px;
+    height: 2rem;
+}
+
+.form-control>label {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: rgb(99, 98, 98);
+}
+
+.form-control input:invalid {
+    border-color: red;
+}
+
+.form-control input:focus {
+    border-color: blue;
+    box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Bottom */
+.bottom {
+    margin-top: 32px;
+    padding: 0 48px;
+}
+
+.bottom button[type="submit"] {
+    background-color: rgb(58, 16, 16);
+    color: white;
+    font-weight: 700;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: 2px solid rgb(58, 16, 16);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-size: 1rem;
+
+    margin-bottom: 24px;
+}
+
+.bottom button[type="submit"]:hover {
+    background-color: rgb(134, 78, 78);
+    transform: scale(1.05);
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.bottom p {
+    font-weight: 500;
+}
+
+.bottom a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(58, 16, 16);
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}

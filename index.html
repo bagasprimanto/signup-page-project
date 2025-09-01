@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="side">
+        <div class="logo">
+            <img src="images/camping-tent-svgrepo-com.svg" alt="Camping Tent Logo">
+            <h1>Back to Nature</h1>
+        </div>
+
+        <div class="credits">
+            Photo by <a href="https://unsplash.com/@ajster412" target="_blank">Andrew Sterling</a> on <a
+                href="https://unsplash.com/photos/people-standing-on-rock-formation-during-daytime-Re3vvoHF98U"
+                target="_blank">Unsplash</a>
+        </div>
+    </div>
+    <main>
+        <div class="headings">
+            <h2>This is a fake camping service! Enjoy the lush and beautiful nature of Scotland's best landscapes for a
+                weekend. Sign up <span class="italic">now</span> to get started!</h2>
+            <h2 class="bottom-text">You <span class="italic">know</span> you want to!</h2>
+        </div>
+
+        <div class="form-container">
+            <h2>Let's do this!</h2>
+            <form action="" method="" id="sign-up">
+                <div class="form-row">
+                    <div class="form-control">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="form-control">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                    </div>
+                    <div class=" form-control">
+                        <label for="password_confirm">Confirm Password</label>
+                        <input type="password" name="password_confirm" id="password_confirm"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="bottom">
+            <button type="submit" form="sign-up">Create Account</button>
+            <p>Already logged in? <a href="https://www.google.com">Log in</a></p>
+        </div>
+    </main>
+</body>
+
+</html>
